@@ -1,8 +1,16 @@
 def somma():  
     n_1=int(input("inserisci il primo numero !")) 
-        n_2=int(input("inserisci il secondo numero !")) 
-        risultato=n_1+n_2
-        print(f"{n_1}+{n_2}={risultato}")
+    n_2=int(input("inserisci il secondo numero !")) 
+    risultato=n_1+n_2
+    print(f"{n_1}+{n_2}={risultato}") 
+
+def sottrazione(): 
+    n_1=int(input("inserisci il primo numero !")) 
+    n_2=int(input("inserisci il secondo numero !")) 
+    risultato=n_1-n_2
+    print(f"{n_1}-{n_2}={risultato}")
+
+
 while True:
     
     print("benvenuto nella nostra calcolatrice") 
@@ -11,10 +19,7 @@ while True:
     if scelta ==0 : 
         break 
     elif scelta==1: 
-        n_1=int(input("inserisci il primo numero !")) 
-        n_2=int(input("inserisci il secondo numero !")) 
-        risultato=n_1-n_2
-        print(f"{n_1}-{n_2}={risultato}")
+        sottrazione() 
 
     elif scelta==2: 
           somma()  
